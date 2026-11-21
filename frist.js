@@ -8,6 +8,7 @@ const students = [
 function getResult(note) {
   return note >= 10 ? "Admis" : "Non Admis";
 }
+
 function displayStudents(studentsList) {
   studentsList.forEach((student) => {
     const result = getResult(student.note);
