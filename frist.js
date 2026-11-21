@@ -1,4 +1,3 @@
-
 const students = [
   { name: "Hamza", note: 16 },
   { name: "Sara", note: 9 },
