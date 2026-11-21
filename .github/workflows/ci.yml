@@ -1,5 +1,5 @@
 
-name: HTML CSS Quality Check
+name: HTML CSS JS Quality Check
 
 on:
   push:
@@ -23,5 +23,8 @@ jobs:
       - name: Check HTML
         run: npx --yes htmlhint index.html
 
+      - name: Check JavaScript Syntax
+        run: node --check frist.js
+
       - name: Check formatting
-        run: npx --yes prettier --check index.html style.css
+        run: npx --yes prettier --check index.html style.css frist.js
