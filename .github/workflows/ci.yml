@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Download repository
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v4
         with:
           node-version: '24'
 
@@ -26,5 +26,5 @@ jobs:
       - name: Check JavaScript Syntax
         run: node --check frist.js
 
-      - name: Check formatting
+      - name: Check Formatting
         run: npx --yes prettier --check index.html style.css frist.js
